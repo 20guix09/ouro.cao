@@ -24,6 +24,61 @@ img {
   display: block;
 }
 
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+}
+
+.lightbox.ativo {
+  display: flex;
+  cursor: zoom-out;
+}
+
+.fullscreen {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.fullscreen.ativo {
+  display: flex;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
 .header {
   width: 100%;
   padding: 18px 8%;
@@ -155,10 +210,6 @@ img {
   object-position: center;
 }
 
-.cachorro {
-  object-position: center;
-  
-}
 
 .secao,
 .contato {
@@ -469,4 +520,42 @@ footer p {
   .hero h1 {
     font-size: 2.4rem;
   }
+}
+
+.fullscreen {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.fullscreen.ativo {
+  display: flex;
+}
+
+.fullscreen .slide {
+  display: none;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+}
+
+.fullscreen .slide.ativo {
+  display: block;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
 }
