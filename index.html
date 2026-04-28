@@ -1,121 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png" type="image/png">
-    <title>Ouro Cão</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ourocão Pet Shop</title>
+
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="#inicio">
-            <img src="logo.png" alt="Logo Ouro Cão">
+  <div class="bolhas">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="header">
+    <a href="#inicio" class="logo">
+      <img src="logo.png" alt="Logo Ourocão">
+    </a>
+
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="https://wa.me/5543991733011" target="_blank" class="btn-header">
+      Agendar
+    </a>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-texto">
+      <span class="tag">Pet Shop em Londrina</span>
+
+      <h1>Seu pet merece cuidado premium todos os dias.</h1>
+
+      <p>
+        Banho, tosa, produtos premium e atendimento feito com carinho,
+        segurança e qualidade para o seu melhor amigo.
+      </p>
+
+      <div class="hero-botoes">
+        <a href="https://wa.me/5543991733011" target="_blank" class="btn principal">
+          Agendar pelo WhatsApp
         </a>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="inicio" class="hero">
-        <h1>Seu pet merece o melhor</h1>
-        <p>Cuidado premium, banho, tosa e produtos de qualidade</p>
-        <a href="https://wa.me/5543991733011" target="_blank" class="btn">
-          Agendar agora Whatsapp
+
+        <a href="#servicos" class="btn secundario">
+          Ver serviços
         </a>
-        <img src="img_1.png" alt="Imagem de um cachorro feliz" class="hero-image">
-    </section>
-    <div id="servicos" class="servicos-cards">
-        
-      <div id="servicos" class="servico">
+      </div>
+    </div>
+
+    <div class="hero-imagem">
+      <img src="img_1.png" alt="Cachorro feliz no banho">
+    </div>
+  </section>
+
+  <section id="servicos" class="secao">
+    <div class="titulo-secao">
+      <span>O que fazemos</span>
+      <h2>Serviços para deixar seu pet feliz e bem cuidado</h2>
+    </div>
+
+    <div class="servicos-cards">
+      <div class="servico">
         <img src="banhoTosa.png" alt="Banho e Tosa">
-    
         <div class="overlay">
           <h3>Banho e Tosa</h3>
-          <p>Atendimento completo para pets de pequeno a grande porte, com produtos de qualidade e cuidado profissional.</p>
+          <p>Higiene completa com produtos de qualidade e cuidado profissional.</p>
         </div>
       </div>
-  
+
       <div class="servico">
         <img src="produtos.png" alt="Produtos Premium">
-    
         <div class="overlay">
           <h3>Produtos Premium</h3>
-          <p>Mais de 1000 itens disponíveis, incluindo rações Premium e Super Premium das melhores marcas do mercado.</p>
+          <p>Rações, acessórios e itens selecionados para o bem-estar do seu pet.</p>
         </div>
       </div>
-  
+
       <div class="servico">
         <img src="entrega.png" alt="Entrega de Produtos">
-    
         <div class="overlay">
-          <h3>Entrega de Produtos</h3>
-          <p>Receba produtos para o seu pet no conforto da sua casa com nosso serviço de tele-entrega.</p>
+          <h3>Tele-entrega</h3>
+          <p>Receba produtos para seu pet no conforto da sua casa.</p>
         </div>
       </div>
-  
     </div>
-    <section id="sobre">
-        <div class="sobre-imagem">
-          <div class="slider">
-            <button class="seta esquerda">‹</button>
+  </section>
 
-            <img src="img01.png" alt="Equipe Ourocão" class="slide ativo">
-            <img src="img02.png" alt="Equipe Ourocão" class="slide">
-            <img src="img03.png" alt="Equipe Ourocão" class="slide">
+  <section id="sobre" class="sobre">
+    <div class="sobre-imagem">
+      <button class="seta esquerda">‹</button>
 
-            <button class="seta direita">›</button>
-          </div>
-        </div>
-        <h2>Quem  cuida do seu pet?</h2>
-        <p>No Ourocão Pet Shop, acreditamos que cada pet merece um cuidado especial.
-            Nossa equipe é formada por profissionais dedicados, apaixonados por animais e preparados para oferecer um atendimento de qualidade, com carinho, segurança e atenção em cada detalhe.
-            Com uma nova gestão, buscamos evoluir todos os dias para proporcionar a melhor experiência para você e seu pet — com serviços e produtos que cabem no seu bolso.
-        </p>
-    </section>
-    <section id="contato">
-      <h2>Informações</h2>
+      <img src="img01.png" alt="Ourocão Pet Shop" class="slide ativo">
+      <img src="img02.png" alt="Produtos Ourocão" class="slide">
+      <img src="img03.png" alt="Fachada Ourocão" class="slide">
 
-      <div class="info-contato">
-        <div>
-          <h3>Telefone:</h3>
-          <a href="https://wa.me/554333244063" target="_blank">(43) 3324-4063</a>
-          <br>
-          <a href="https://wa.me/5543991733011" target="_blank">(43) 99173-3011</a>
-        </div>
+      <button class="seta direita">›</button>
+    </div>
 
-        <div>
-            <h3>Endereço:</h3>
-            <p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Firmino+Almeida+Tavares+35+Londrina+PR" target="_blank">
-                  R. Firmino Almeida Tavares, 35
-                </a>
-                - Parigot de Souza 2, Londrina - PR, 86082-145
-            </p>
+    <div class="sobre-texto">
+      <span>Sobre nós</span>
+      <h2>Quem cuida do seu pet?</h2>
 
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.513937193847!2d-51.1754037!3d-23.2607683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb4534128e418d%3A0xc7ba74cf8c622e2b!2sR.%20Firmino%20Almeida%20Tav%C3%A1res%2C%2035%20-%20Parigot%20de%20Souza%202%2C%20Londrina%20-%20PR%2C%2086082-145!5e0!3m2!1spt-BR!2sbr!4v1777235550762!5m2!1spt-BR!2sbr"
-              width="400"
-              height="300"
-              style="border:0;"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-      </div>
-    </section>
-    <footer>
+      <p>
+        No Ourocão Pet Shop, cada pet recebe atenção especial. Nossa equipe é
+        formada por profissionais dedicados, apaixonados por animais e preparados
+        para oferecer atendimento com carinho, segurança e qualidade.
+      </p>
+
+      <p>
+        Com nova gestão, buscamos evoluir todos os dias para entregar uma
+        experiência melhor para você e seu pet.
+      </p>
+
+      <a href="https://wa.me/5543991733011" target="_blank" class="btn principal">
+        Falar com a equipe
+      </a>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="titulo-secao">
+      <span>Informações</span>
+      <h2>Entre em contato ou venha nos visitar</h2>
+    </div>
+
+    <div class="contato-grid">
+      <div class="contato-card">
+        <h3>Telefones</h3>
+
+        <a href="https://wa.me/554333244063" target="_blank">(43) 3324-4063</a>
+        <a href="https://wa.me/5543991733011" target="_blank">(43) 99173-3011</a>
+
+        <h3>Endereço</h3>
+
         <p>
-      &copy; 2026 Ourocão Pet Shop. Todos os direitos reservados.
-      Cuidando do seu pet com carinho, segurança e qualidade.
-      Desenvolvido por GM Sites.
-    </p>
-    </footer>
-    <script src="script.js"></script>
+          R. Firmino Almeida Tavares, 35<br>
+          Parigot de Souza 2, Londrina - PR
+        </p>
+      </div>
+
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.513937193847!2d-51.1754037!3d-23.2607683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb4534128e418d%3A0xc7ba74cf8c622e2b!2sR.%20Firmino%20Almeida%20Tav%C3%A1res%2C%2035%20-%20Parigot%20de%20Souza%202%2C%20Londrina%20-%20PR%2C%2086082-145!5e0!3m2!1spt-BR!2sbr!4v1777235550762!5m2!1spt-BR!2sbr"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Ourocão Pet Shop. Todos os direitos reservados.</p>
+    <p>Desenvolvido por GM Web.</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img">
+  </div>
+
+  <div class="fullscreen" id="fullscreen">
+    <button class="fechar">✕</button>
+    <button class="seta esquerda">‹</button>
+    
+    <img src="img01.png" class="slide">
+    <img src="img02.png" class="slide">
+    <img src="img03.png" class="slide">
+    
+    <button class="seta direita">›</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
