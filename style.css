@@ -538,3 +538,44 @@ footer p {
   height: 45px;
   cursor: pointer;
 }
+
+.btn-menu {
+  display: none;
+  background: #0077ff;
+  color: white;
+  border: none;
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .btn-menu {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 55, 120, 0.18);
+
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .menu.ativo {
+    display: flex;
+  }
+
+  .btn-header {
+    display: none;
+  }
+}

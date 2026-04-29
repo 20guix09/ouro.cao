@@ -5,6 +5,9 @@ const slidesFullscreen = document.querySelectorAll("#fullscreen .slide");
 const fullscreen = document.getElementById("fullscreen");
 const btnFechar = document.querySelector(".fechar");
 
+const btnMenu = document.getElementById("btn-menu");
+const menu = document.getElementById("menu");
+
 let index = 0;
 
 // ===== MOSTRAR SLIDE (SINCRONIZA NORMAL + FULLSCREEN)
@@ -37,4 +40,14 @@ slides.forEach((img, i) => {
 // ===== FECHAR FULLSCREEN
 btnFechar.addEventListener("click", () => {
   fullscreen.classList.remove("ativo");
+});
+
+btnMenu.addEventListener("click", () => {
+  menu.classList.toggle("ativo");
+});
+
+menu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("ativo");
+  });
 });
