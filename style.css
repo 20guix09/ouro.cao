@@ -24,26 +24,6 @@ img {
   display: block;
 }
 
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 20px;
-}
-
-.lightbox.ativo {
-  display: flex;
-  cursor: zoom-out;
-}
 
 .fullscreen {
   position: fixed;
@@ -166,7 +146,7 @@ img {
 .hero p {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #425466;
+  color: #1a2a3a;
   max-width: 560px;
 }
 
