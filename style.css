@@ -316,28 +316,7 @@ img {
   display: block;
 }
 
-.seta {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.9);
-  color: #0077ff;
-  font-size: 34px;
-  cursor: pointer;
-}
 
-.esquerda {
-  left: 18px;
-}
-
-.direita {
-  right: 18px;
-}
 
 .contato-grid {
   display: grid;
